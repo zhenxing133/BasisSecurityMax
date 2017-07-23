@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:security="http://schemas.android.com/apk/res/com.ithomework.basissecuritymax"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.ithomework.basissecuritymax.activity.activity.SettingView
+        android:id="@+id/setting_view"
+        security:title="提示更新"
+        security:des_on="打开提示更新"
+        security:des_off="关闭提示更新"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </com.ithomework.basissecuritymax.activity.activity.SettingView>
+</LinearLayout>

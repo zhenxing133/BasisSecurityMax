@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!--
+    gravity : 设置控件中内容的位置
+	layout_gravity : 设置控件在父控件中的位置
+	paddingTop : 距离控件内边框顶部的距离
+    -->
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:gravity="center_horizontal"
+        android:textColor="#fff"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="手机防盗"
+        android:textSize="22sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="安全号码"
+            android:textSize="18sp" />
+        <!-- layout_alignParentRight : 在父控件的右方 -->
+
+        <TextView
+            android:id="@+id/tv_lostfind_safenum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:text="1234"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/tv_lostfind_safenum"
+            android:background="#66000000" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="防盗保护是否开启"
+            android:textSize="18sp" />
+        <!-- layout_alignParentRight : 在父控件的右方 -->
+
+        <ImageView
+            android:id="@+id/tv_lostfind_islock"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/unlock" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/tv_lostfind_islock"
+            android:background="#66000000" />
+    </RelativeLayout>
+
+
+
+
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="功能简介"
+        android:textSize="18sp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="#66000000"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        />
+    <TextView
+        android:paddingTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GPS追踪:#*location*#"
+        android:textSize="18sp"
+        android:layout_marginLeft="5dp"
+        android:drawableLeft="@android:drawable/btn_star_big_on"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        />
+    <TextView
+        android:paddingTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="播放报警音乐:#*alarm*#"
+        android:textSize="18sp"
+        android:layout_marginLeft="5dp"
+        android:drawableLeft="@android:drawable/btn_star_big_on"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        />
+    <TextView
+        android:paddingTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="远程删除数据:#*wipedata*#"
+        android:textSize="18sp"
+        android:layout_marginLeft="5dp"
+        android:drawableLeft="@android:drawable/btn_star_big_on"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        />
+    <TextView
+        android:paddingTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="远程锁屏:#*lockscreen*#"
+        android:textSize="18sp"
+        android:layout_marginLeft="5dp"
+        android:drawableLeft="@android:drawable/btn_star_big_on"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        />
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#66000000" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="防盗重置"
+        android:textSize="18sp"
+        android:clickable="true"
+        android:onClick="resetup"
+        />
+    
+
+
+</LinearLayout>

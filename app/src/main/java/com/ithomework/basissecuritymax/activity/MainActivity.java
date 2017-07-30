@@ -19,6 +19,7 @@ import android.widget.GridView;
 import android.widget.Toast;
 
 import com.ithomework.basissecuritymax.R;
+import com.ithomework.basissecuritymax.activity.activity.LostFindActivity;
 import com.ithomework.basissecuritymax.activity.activity.SettingActivity;
 import com.ithomework.basissecuritymax.activity.adapter.GridAdapter;
 import com.ithomework.basissecuritymax.activity.utils.MD5Utils;
@@ -156,8 +157,13 @@ public class MainActivity extends AppCompatActivity {
                 }
                 String sp_pwd = sp.getString("pwd", "");
                 if (MD5Utils.digestPassWord(enter_pwd).equals(sp_pwd)) {
-                    enter_dialog.dismiss();
+                    Toast.makeText(getApplication(),"登入成功",Toast.LENGTH_SHORT).show();
                     //跳转页面
+                    Intent intent = new Intent(MainActivity.this, LostFindActivity.class);
+                    startActivity(intent);
+                    finish();
+                    enter_dialog.dismiss();
+
                 } else {
                     Toast.makeText(getApplication(),"密码输入错误",Toast.LENGTH_SHORT).show();
                 }
